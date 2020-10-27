@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  pg-validate-cpf-with-captcha:
+    image: postgres:12-alpine
+    ports:
+      - "5444:5432"
+    container_name: "pg-validate-cpf-with-captcha"
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: validate_cpf_with_captcha
+      POSTGRES_PASSWORD: 123
+
+volumes:
+  pgdata:

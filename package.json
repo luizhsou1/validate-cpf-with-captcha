@@ -1,0 +1,41 @@
+{
+  "name": "validate-cpf-with-captcha",
+  "version": "1.0.0",
+  "description": "Valida cpf no site da receita quebrando captcha",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node -r dotenv/config ./src/server.ts",
+    "dev": "ts-node-dev --inspect=0.0.0.0:9244 --exit-child --respawn -r dotenv/config ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizhsou1/validate-cpf-with-captcha.git"
+  },
+  "author": "Luiz Henrique <luizhsou1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizhsou1/validate-cpf-with-captcha/issues"
+  },
+  "homepage": "https://github.com/luizhsou1/validate-cpf-with-captcha#readme",
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0",
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.14.5",
+    "@types/puppeteer": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "cpf-cnpj-validator": "^1.0.3",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "puppeteer": "^5.4.1"
+  }
+}
